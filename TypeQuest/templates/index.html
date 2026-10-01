@@ -1,0 +1,12 @@
+{% extends 'base.html' %}{% block title %}Typing, turned into a quest{% endblock %}
+{% block content %}
+<section class="hero row align-items-center g-5 py-5">
+ <div class="col-lg-7"><div class="eyebrow"><span class="pulse"></span> YOUR NEXT LEVEL STARTS HERE</div>
+ <h1 class="display-title">Make every<br><span class="gradient-text">keystroke count.</span></h1>
+ <p class="hero-copy">A focused space to build typing speed, sharpen accuracy, and turn daily practice into a game worth coming back to.</p>
+ <div class="d-flex flex-wrap gap-3 mt-4"><a class="btn btn-primary btn-lg" href="{{ url_for('register') }}">Start your quest <i class="fa-solid fa-arrow-right ms-2"></i></a><a class="btn btn-ghost btn-lg" href="{{ url_for('guest') }}">Try as guest</a></div>
+ <div class="hero-proof mt-5"><div><strong>01</strong><span>Practice at your pace</span></div><div><strong>02</strong><span>Track real progress</span></div><div><strong>03</strong><span>Unlock new milestones</span></div></div></div>
+ <div class="col-lg-5"><div class="hero-preview"><div class="preview-top"><span class="dots">● ● ●</span><span>LIVE TYPING SESSION</span><span class="live-tag">LIVE</span></div><div class="preview-stats"><div><small>WPM</small><b>72</b></div><div><small>ACCURACY</small><b>98<span>%</span></b></div><div><small>TIME</small><b>00:42</b></div></div><div class="preview-text">The secret of getting ahead is <span class="typed">getting started</span><span class="cursor"></span> and staying curious about what comes next.</div><div class="preview-progress"><span></span></div><div class="preview-bottom"><span>LEVEL 04 · FLOW STATE</span><span>+120 XP ✦</span></div></div><div class="float-chip chip-one"><i class="fa-solid fa-bolt"></i> New personal best</div><div class="float-chip chip-two">⌨️ &nbsp; Keep your streak alive</div></div>
+</section>
+<section class="feature-strip row g-3 mt-3"><div class="col-md-4"><div class="feature-card"><i class="fa-solid fa-gauge-high"></i><h5>Know your numbers</h5><p>Live WPM, accuracy, errors and progress, all in one view.</p></div></div><div class="col-md-4"><div class="feature-card"><i class="fa-solid fa-gamepad"></i><h5>Practice through play</h5><p>Race the clock, build combos and take on daily challenges.</p></div></div><div class="col-md-4"><div class="feature-card"><i class="fa-solid fa-chart-line"></i><h5>See the difference</h5><p>Keep your test history and follow your improvement over time.</p></div></div></section>
+{% endblock %}
